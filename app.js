@@ -10,7 +10,7 @@ app.use(bodyParser.json())
 app.use('/usuarios', usuarios)
 
 app.get('/', (request, response) => {
-  response.send('Teste Sky Backend')
+  response.send('Sky Backend')
 })
 
 app.listen(PORT)

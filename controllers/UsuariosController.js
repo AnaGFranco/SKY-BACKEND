@@ -29,7 +29,11 @@ const getById = (request, response) => {
       return response.status(200).send(usuario)
     }
 
-    return response.status(404).send('Usuario não encontrado.')
+    return response.status(404).send(
+      {
+        "mensagem": "Usuario não encontrado."
+      }
+    )
   })
 }
 
@@ -58,10 +62,18 @@ const remove = (request, response) => {
     }
 
     if (usuario) {
-      return response.status(200).send('Usuario removiado!')
+      return response.status(200).send(
+        {
+          "mensagem": "Usuario removiado!"
+        }
+      )
     }
 
-    return response.status(404).send('Usuario não encontrado.')
+    return response.status(404).send(
+      {
+        "mensagem": "Usuario não encontrado."
+      }
+    )
   })
 }
 
@@ -83,7 +95,11 @@ const update = (request, response) => {
         return response.status(200).send(usuario)
       }
 
-      return response.status(404).send('Usuario não encontrado.')
+      return response.status(404).send(
+        {
+          "mensagem": "Usuario não encontrado."
+        }
+      )
     }
   )
 }
@@ -119,7 +135,11 @@ const getTelefones = async (request, response) => {
       return response.status(200).send(usuario.telefones)
     }
 
-    return response.status(404).send('Usuario não encontrado.')
+    return response.status(404).send(
+      {
+        "mensagem": "Usuario não encontrado."
+      }
+    )
   })
 }
 
@@ -151,7 +171,11 @@ const updateTelefone = (request, response) => {
         return response.status(200).send(usuario)
       }
 
-      return response.status(404).send('Usuario não encontrado.')
+      return response.status(404).send(
+        {
+          "mensagem": "Usuario não encontrado."
+        }
+      )
     }
   )
 }
@@ -169,7 +193,11 @@ const removeTelefone = async (request, response) => {
       return response.status(500).send(error)
     }
 
-    return response.status(200).send("Telefone removido!")
+    return response.status(200).send(
+      {
+        "mensagem": "Telefone removido!"
+      }
+    )
   })
 
 }
@@ -195,10 +223,15 @@ const login = async (request, response) => {
     return response.status(401).send(
       {
       "mensagem": "Usuário ou senha incorreto"
-      })
+      }
+    )
   }
 
-  return response.status(404).send('Usuario não encontrado.')
+  return response.status(404).send(
+    {
+    "mensagem": "Usuário ou senha incorreto"
+    }
+  )
 }
 
 
