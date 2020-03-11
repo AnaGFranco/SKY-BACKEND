@@ -5,7 +5,7 @@ const app = express()
 const usuarios = require('./routes/usuarios')
 const PORT = 3000
 
-app.use(cors())
+
 app.use(bodyParser.json())
 app.use('/usuarios', usuarios)
 
