@@ -37,13 +37,9 @@ const autenticar = (request, response, next) => {
 router.get('', autenticar, controller.getAll) // ler todos usuário
 router.post('', controller.add) // add usuário
 router.get('/:id', autenticar, controller.getById) // ler usuário por id
-router.patch('/:id', controller.update) // atualizar usuário por id
-router.delete('/:id',  controller.remove) // deletar usuário por id
-router.post('/:usuarioId/telefones', controller.addTelefone)  // add usuário
-router.get('/:usuarioId/telefones',  controller.getTelefones) // ler telefones por usuario
-router.patch('/::usuarioId/telefones/:telefoneId', controller.updateTelefone) //atualizar telefone
-router.delete('/:usuarioId/telefones/:telefoneId', controller.removeTelefone) //deletar telefone
-router.post('/login', controller.login) // realizar login
+router.patch('/:id', autenticar, controller.update) // atualizar usuário por id
+router.delete('/:id', autenticar,  controller.remove) // deletar usuário por id
+router.post('/login', autenticar, controller.login) // realizar login
 
 module.exports = router
 
