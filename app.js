@@ -1,4 +1,4 @@
-const express = require('express')
+﻿const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser')
 const app = express()
@@ -10,7 +10,7 @@ app.use(bodyParser.json())
 app.use('/usuarios', usuarios)
 
 app.get('/', (request, response) => {
-  response.send('Olá, mundo!')
+  response.send('Teste Sky Backend')
 })
 
 app.listen(PORT)
