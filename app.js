@@ -17,7 +17,7 @@ consign( { cwd:  'SKY-BACKEND' } ) // Parametro para acessar a pasta
   .into(app)
 
 app.listen(PORT, () => {
-  console.log(`Server is running at localhost:${PORT}`)
+  console.log(`Servidor está rodando na Porta:${PORT}`)
 })
 
 app.get('/', (request, response) => {

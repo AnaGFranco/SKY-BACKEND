@@ -1,5 +1,6 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose'); // O Mongoose traduz os dados do banco de dados para objetos JavaScript
 const Schema = mongoose.Schema;
+
 const UsuariosSchema = new Schema({
   _id: { type: mongoose.Schema.Types.ObjectId, auto: true, required: true },
   nome: { type: String, required: true },
@@ -12,7 +13,7 @@ const UsuariosSchema = new Schema({
              ],
   data_criacao: {type: Date},
   data_atualizacao: {type: Date},
-  data_login: {type: Date}
+  ultimo_login: {type: Date}
 })
 
 const usuariosModel = mongoose.model('usuarios', UsuariosSchema);
