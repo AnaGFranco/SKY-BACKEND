@@ -43,9 +43,9 @@ POST   usuarios/ => CRIAR USUARIO/SIGN_UP
 
 POST   usuarios/login => REALIZAR LOGIN/SIGN_IN
 
-GET    usuarios/ => LISTA USUARIO
-  
 GET    usuarios/:id => LISTAR USUARIO POR ID
+
+GET    usuarios/ => LISTA USUARIO
   
 PATCH  usuarios/:id => ATUALIZAR USUARIO POR ID
   
