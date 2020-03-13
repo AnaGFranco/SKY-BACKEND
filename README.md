@@ -34,7 +34,7 @@ https://github.com/AnaGFranco/SKY-BACKEND/fork
 git clone https://github.com/AnaGFranco/SKY-BACKEND
 ```
 
-Após instalado, acesse o novo diretório criado e excute a instalação das dependencias com o comando:
+Agora acesse o novo diretório criado e excute a instalação das dependencias com o comando:
   
 `   npm install      `  
 
