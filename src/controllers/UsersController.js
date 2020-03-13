@@ -1,3 +1,4 @@
+require('dotenv').config()
 const { connect } = require('../models/Repository')
 const usersModel = require('../models/UsersModel')
 const bcrypt = require('bcryptjs') // utilizado para criptografa a senha
