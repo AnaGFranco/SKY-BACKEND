@@ -1,7 +1,7 @@
 const mongoose = require('mongoose'); // O Mongoose traduz os dados do banco de dados para objetos JavaScript
 const Schema = mongoose.Schema;
 
-const UsuariosSchema = new Schema({
+const UsersSchema = new Schema({
   _id: { type: mongoose.Schema.Types.ObjectId, auto: true, required: true },
   nome: { type: String, required: true },
   email: { type: String, required: true },
@@ -16,6 +16,6 @@ const UsuariosSchema = new Schema({
   ultimo_login: {type: Date}
 })
 
-const usuariosModel = mongoose.model('usuarios', UsuariosSchema);
+const usersModel = mongoose.model('usuarios', UsersSchema);
 
-module.exports = usuariosModel;
+module.exports = usersModel;
