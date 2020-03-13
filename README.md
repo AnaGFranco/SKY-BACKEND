@@ -46,9 +46,9 @@ Para iniciar a aplicação execute
 **Endpoints**  
 
   
-POST   usuarios/ => CRIAR USUARIO/SIGN_UP
+POST   usuarios/ => SIGN_UP
 
-POST   usuarios/login => REALIZAR LOGIN/SIGN_IN
+POST   usuarios/login => SIGN_IN
 
 GET    usuarios/:id => LISTAR USUARIO POR ID
 
