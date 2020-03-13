@@ -16,7 +16,7 @@ module.exports = (req, res, next) => {
     const [ scheme, token ] = parts;
   
     if(!/^Bearer$/i.test(scheme))
-        return res.status(401).send({ "Mensagem": "Token malformatted" });
+        return res.status(401).send({ "Mensagem": "Token mal formatado"});
     
         let authenticated = false
 

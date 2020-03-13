@@ -158,7 +158,6 @@ const update = (request, response) => {
   )
 }
 
-
 module.exports = {
   signUp,
   signIn,

@@ -6,10 +6,6 @@ const app = express()
 const users = require('./routes/users')
 const index = require("./routes/index")
 
-// params = {
-//   MONGO_URL : process.env.MONGODB_URI
-// }
-
 app.use(cors()) 
 app.use(bodyParser.json())
 app.use('/usuarios', users)
