@@ -20,21 +20,28 @@ Criar um aplicativo backend que irá expor uma API RESTful de criação de sing 
 
 Para rodar os endpoits utilizamos o Postman
 
-**Para a execução do codigo:**
+**Para a instalação:**
 
-Será necessario clonar este repositório:  
-  
- **1º** Acessar o git bash;  
-  
- **2º** Digite o comando:  
-   
-` git clone https://github.com/AnaGFranco/SKY-BACKEND `
+1º `Fork` esse repositório para seu github:
 
-Após clonar, acesse o novo diretório criado e excute a instalação das dependencias com o comando:
+```
+https://github.com/AnaGFranco/SKY-BACKEND/fork
+```
+
+2º Execute o comando em um terminal para clonar o repositorio
+
+```
+git clone https://github.com/AnaGFranco/SKY-BACKEND
+```
+
+Após instalado, acesse o novo diretório criado e excute a instalação das dependencias com o comando:
   
 `   npm install      `  
-`   npm start      `  
-`   nodemon app.js      `  
+
+Para iniciar a aplicação execute
+
+`   npm start node server.js     `  
+  
 
 **Endpoints**  
 
@@ -50,5 +57,10 @@ GET    usuarios/ => LISTA USUARIO
 PATCH  usuarios/:id => ATUALIZAR USUARIO POR ID
   
 DELETE usuarios/:id => DELETAR USUARIO POR ID
+
+Heroku: https://backend-sky.herokuapp.com/ ou localhost:5000
+
+
+
   
 
